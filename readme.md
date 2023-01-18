@@ -83,6 +83,6 @@ cdk destroy
 - [ ]  ....
 
 ## source
-https://auth0.com/blog/use-terraform-to-manage-your-auth0-configuration/
-https://12factor.net/
+- https://auth0.com/blog/use-terraform-to-manage-your-auth0-configuration/
+- https://12factor.net/
 
