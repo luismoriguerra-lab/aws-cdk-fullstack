@@ -24,21 +24,65 @@ cdk synth
 cdk destroy
 ```
 
-## Roadmap
-- [x] Add Fronted
-> - [ ] Add CSP (lambda edge)
-> - [ ] Add Authorization
-> - [ ] Add public/public profiles
-> - [ ] add story book
-- [ ] add backend
-> - [ ] add follow 12factor
-> - [ ] add authorization layer (jwt)
-- [ ] add CSP
-- [ ] add ses emails and templates
-- [ ] add fargate 
-- [ ] add step functions
-- [ ] add e2e test
-- [ ] add github actions
-- [ ] add stages
-- [ ] add wiki page# aws-cdk-fullstack
-# aws-cdk-fullstack
+### Roadmap
+
+## Infraestructure
+[ ] add stages
+[ ] add ses emails and templates
+[ ] add step functions
+[ ] add sns and sqs
+[ ] add aws fargate for one-time scripts
+
+## Fronted SPA
+[x] add angular sap
+[x] add tailwind
+[x] add story book
+[ ] Add Authorization (auth0)
+[ ] Add public/public profiles
+[ ] add icons
+[ ] Add CSP (lambda edge)
+[ ] add vue spa
+[ ] add fonts
+[ ] add colors
+[ ] add unit tests with jest
+[ ] add integration tests (cypress or codecepts)
+
+## backend
+[ ] add NestJS
+[ ] add authorization layer (jwt)
+[ ] add code generation for api-gateway core-services (autogenerate services from apigw)
+[ ] add support x-request-id
+[ ] add logging
+[ ] add monitoring
+[ ] add tracing
+[ ] add error handling
+[ ] add follow 12factor
+[ ] add unit tests
+[ ] add integration tests
+[ ] add e2e tests
+[ ] add swagger
+[ ] add support to aws lambda
+[ ] add support aws fargate (docker)
+
+## authentication
+[ ] add auth0 client with terrafom
+[ ] add auth0 API 
+[ ] add auth0 rules
+[ ] add auth0 universal login
+
+## Frontend SSR (server side rendering)
+[ ] Using angular universal
+[ ] Using Nuxt
+[ ] Using Next
+
+## Frontend Custom web components
+[ ] by angular element
+[ ] by vue
+
+## Event Driven Architecture Examples
+[ ]  ....
+
+## source
+https://auth0.com/blog/use-terraform-to-manage-your-auth0-configuration/
+https://12factor.net/
+

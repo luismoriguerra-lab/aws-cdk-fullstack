@@ -346,7 +346,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<p>home works!</p>\n<!-- <app-singular name=\"home\" ></app-singular> -->\n<app-reusable name=\"home\"></app-reusable>\n"
+            "templateData": "<div class=\"bg-blue-50\">\n  <p>home works!</p>\n  <!-- <app-singular name=\"home\" ></app-singular> -->\n  <app-reusable name=\"home\"></app-reusable>\n  <mat-slide-toggle>Toggle me!</mat-slide-toggle>\n</div>\n"
         },
         {
             "name": "PageComponent",
@@ -431,7 +431,7 @@
         {
             "name": "ReusableComponent",
             "id": "component-ReusableComponent-dc8eae6feab8c899bad28ef99dce5e97e72fbe2f2d9ca6d67009ac3500b8db89ac5e31f3f2c184900bba02d714ab451f8fb1af6f38494be2ebb29c17d791fbf1",
-            "file": "src/app/components/reusable/reusable.component.ts",
+            "file": "src/app/components/standalone/reusable/reusable.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -555,13 +555,13 @@
         },
         {
             "name": "AppModule",
-            "id": "module-AppModule-18bb282a98c3cb0a18fc4ecd82a76437e64c1db42d998a2a1f2c2490d970c9b319fa25dc929814899b82c8f6eae091a250e04aa56bd8adea23d18e6bc47ee7a1",
+            "id": "module-AppModule-c63d705785d212c5c4f05983f8533e046c96e2768f8a0b2e7bd3897b4f8c52455b6c8226d51d346f5a4189ee258a3cd1be2be63b442d83ab65eaf4e00a1b57af",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ReusableComponent } from './components/reusable/reusable.component';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, AppRoutingModule, ReusableComponent],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ReusableComponent } from './components/standalone/reusable/reusable.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule, AppRoutingModule, ReusableComponent, BrowserAnimationsModule],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -642,13 +642,13 @@
         },
         {
             "name": "HomeModule",
-            "id": "module-HomeModule-c0f2faf8d1ce3b2354e78dc8a8bb3d66c48f16cc8888e6139dab26f483cb2cd91e0996cd12f67dc967ebfbdfaed8bafc7c1c35acc072681dc3ef05df0a04ca53",
+            "id": "module-HomeModule-474d04882238e09e6bd5e441b71c1a2ad286f140a4c7b7d392db71a815da9900e31f294d809f3c05615c1d989385d9e4cc4d3c6cb3eadb7357c13f4047f142e3",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/modules/home/home.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HomeRoutingModule } from './home-routing.module';\nimport { HomeComponent } from './home.component';\nimport { ReusableComponent } from 'src/app/components/reusable/reusable.component';\n\n@NgModule({\n  declarations: [HomeComponent],\n  imports: [CommonModule, HomeRoutingModule, ReusableComponent],\n})\nexport class HomeModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HomeRoutingModule } from './home-routing.module';\nimport { HomeComponent } from './home.component';\nimport { ReusableComponent } from 'src/app/components/standalone/reusable/reusable.component';\nimport { MatSlideToggleModule } from '@angular/material/slide-toggle';\n\n@NgModule({\n  declarations: [HomeComponent],\n  imports: [\n    CommonModule,\n    HomeRoutingModule,\n    ReusableComponent,\n    MatSlideToggleModule,\n  ],\n})\nexport class HomeModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1157,7 +1157,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/components/reusable/reusable.component.ts",
+                "filePath": "src/app/components/standalone/reusable/reusable.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ReusableComponent",
