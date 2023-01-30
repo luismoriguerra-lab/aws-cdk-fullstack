@@ -65,9 +65,9 @@ cdk destroy
 - [ ] add support aws fargate (docker)
 
 ## authentication
-- [ ] add auth0 client with terrafom
-- [ ] add auth0 API 
-- [ ] add auth0 rules
+- [x] add auth0 client with terrafom
+- [x] add auth0 API 
+- [x] add auth0 rules
 - [ ] add auth0 universal login
 
 ## Frontend SSR (server side rendering)
